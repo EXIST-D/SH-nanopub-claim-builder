@@ -1,0 +1,61 @@
+=== claim id=C1
+text: The matched-filter signal-to-noise ratio of the signal observed on September 14, 2015 is 24.
+s: matched-filter signal-to-noise ratio of the signal observed on September 14, 2015
+p: has_value
+o: 24
+cond: signal observed simultaneously by the two Advanced LIGO detectors on September 14, 2015
+ev: E006.4
+quote: matched-filter signal-to-noise ratio of 24
+tags: detection, snr
+
+=== claim id=C2
+text: The false alarm rate of the signal observed on September 14, 2015 is estimated to be less than 1 event per 203 000 years.
+s: false alarm rate of the signal observed on September 14, 2015
+p: has_value
+o: less than 1 event per 203 000 years
+ev: E006.4
+quote: a false alarm rate estimated to be less than 1 event per 203 000 years
+tags: detection, significance
+
+=== claim id=C3
+text: The observed signal matches the waveform predicted by general relativity for the inspiral and merger of a pair of black holes and the ringdown of the resulting single black hole.
+s: signal observed on September 14, 2015
+p: matches
+o: waveform predicted by general relativity for a binary black hole inspiral, merger and ringdown
+ev: E006.3
+quote: It matches the waveform predicted by general relativity for the inspiral and merger of a pair of black holes and the ringdown of the resulting single black hole
+tags: general-relativity
+
+=== claim id=C4
+text: These observations demonstrate the existence of binary stellar-mass black hole systems.
+s: These observations
+p: detects
+o: binary stellar-mass black hole systems
+ev: E012.3
+tags: black-holes
+
+=== claim id=C5
+text: This is the first direct detection of gravitational waves and the first observation of a binary black hole merger.
+s: signal observed on September 14, 2015
+p: detects
+o: gravitational waves and a binary black hole merger
+ev: E012.4
+tags: detection
+
+=== claim id=C6
+text: All uncertainties are defined as 90% credible intervals.
+s: uncertainties reported in the abstract
+p: is_a
+o: 90% credible intervals
+ev: E012.2
+type: definition
+tags: statistics
+
+=== claim id=C7
+text: The signal observed on September 14, 2015 was caused by a binary black hole merger.
+s: binary black hole merger
+p: causes
+o: signal observed on September 14, 2015
+ev: E006.3
+quote: the inspiral and merger of a pair of black holes
+tags: source

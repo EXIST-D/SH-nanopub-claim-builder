@@ -1,0 +1,4 @@
+minimal evidence on SciFact (772 claim-abstract pairs with rationale sentences)
+  hit@1 (top proposed sentence is a gold rationale): 0.32 | random sentence 0.21 | first sentence 0.07
+  recall of gold rationale sentences by the proposed minimal set: 0.55 | proposed set 2.00 sentences vs gold 1.80 sentences | whole abstract would be ~9.7 sentences
+atomicity: single claims flagged (false alarms) 22/673 = 3.3% | joined compound claims flagged 300/300 = 100.0%

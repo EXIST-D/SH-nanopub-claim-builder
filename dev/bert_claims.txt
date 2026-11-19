@@ -1,0 +1,78 @@
+=== claim id=C1
+text: BERT obtains a GLUE score of 80.5 on the official GLUE leaderboard (BERT-large).
+s: GLUE leaderboard score of BERT-large
+p: has_value
+o: 80.5
+cond: official GLUE leaderboard, as of the date of writing
+ev: E059.4
+quote: BERTLARGE obtains a score of 80.5
+tags: glue
+
+=== claim id=C2
+text: OpenAI GPT obtains a GLUE leaderboard score of 72.8.
+s: GLUE leaderboard score of OpenAI GPT
+p: has_value
+o: 72.8
+cond: official GLUE leaderboard, as of the date of writing
+ev: E059.4
+quote: OpenAI GPT, which obtains 72.8 as of the date of writing
+tags: glue
+
+=== claim id=C3
+text: BERT-large significantly outperforms BERT-base across all tasks.
+s: BERT-large
+p: outperforms
+o: BERT-base
+cond: GLUE tasks; the gap is largest for tasks with very little training data
+ev: E060.1
+quote: BERTLARGE significantly outperforms BERTBASE across all tasks, especially those with very little training data
+tags: model-size
+
+=== claim id=C4
+text: BERT-base and BERT-large obtain 4.5% and 7.0% average accuracy improvement over the prior state of the art on GLUE.
+s: BERT-base and BERT-large
+p: outperforms
+o: prior state of the art on GLUE
+cond: average accuracy over GLUE tasks; improvements 4.5% (base) and 7.0% (large)
+ev: E059.1
+tags: glue
+
+=== claim id=C5
+text: On SQuAD v1.1, the best BERT system outperforms the top leaderboard system by 1.5 F1 as an ensemble.
+s: best BERT system (ensemble)
+p: outperforms
+o: top leaderboard system
+cond: SQuAD v1.1 test set; ensemble; margin +1.5 F1
+ev: E071.1
+quote: Our best performing system outperforms the top leaderboard system by +1.5 F1 in ensembling
+tags: squad
+
+=== claim id=C6
+text: A single BERT model outperforms the top ensemble system in terms of F1 on SQuAD v1.1.
+s: single BERT model
+p: outperforms
+o: top ensemble system
+cond: SQuAD v1.1; measured by F1
+ev: E071.2
+quote: our single BERT model outperforms the top ensemble system in terms of F1 score
+tags: squad
+
+=== claim id=C7
+text: Removing the next sentence prediction (NSP) task hurts performance significantly on QNLI, MNLI and SQuAD 1.1.
+s: removing NSP
+p: decreases
+o: performance
+cond: QNLI, MNLI and SQuAD 1.1 (Table 5)
+ev: E092.2
+quote: removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1
+tags: ablation
+
+=== claim id=C8
+text: The left-to-right model performs worse than the masked language model on all tasks, with large drops on MRPC and SQuAD.
+s: masked language model (MLM)
+p: outperforms
+o: left-to-right (LTR) model
+cond: pre-training ablation, all tasks in Table 5
+ev: E092.4
+quote: The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD
+tags: ablation

@@ -1,0 +1,111 @@
+{
+ "sources": [
+  {
+   "source_id": "S1",
+   "iri": "https://doi.org/10.9999/jib.2024.0042",
+   "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+   "authors": [
+    "Mara Lindqvist",
+    "Tomas Okafor",
+    "Yuki Hartmann"
+   ],
+   "year": 2024,
+   "venue": "Journal of Imaginary Biomaterials",
+   "doi": "10.9999/jib.2024.0042",
+   "arxiv_id": null,
+   "pmid": null,
+   "version": null,
+   "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+   "file_name": "mini_paper.md",
+   "pages": null,
+   "fields": {
+    "doi": {
+     "origin": "front-matter/header text",
+     "confidence": "high"
+    },
+    "title": {
+     "origin": "title block",
+     "confidence": "high"
+    },
+    "authors": {
+     "origin": "front matter of page 1",
+     "confidence": "medium"
+    },
+    "year": {
+     "origin": "most frequent year in the front matter",
+     "confidence": "low"
+    },
+    "venue": {
+     "origin": "header/footer/front text of page 1-2",
+     "confidence": "low"
+    }
+   },
+   "missing": [],
+   "conflicts": []
+  }
+ ],
+ "raw": [
+  {
+   "file": {
+    "file_name": "mini_paper.md",
+    "format": "md",
+    "pages": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "bytes": 3059
+   },
+   "doi": {
+    "value": "10.9999/jib.2024.0042",
+    "origin": "front-matter/header text",
+    "confidence": "high"
+   },
+   "title": {
+    "value": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "origin": "title block",
+    "confidence": "high",
+    "anchor": "E001"
+   },
+   "authors": {
+    "value": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "origin": "front matter of page 1",
+    "confidence": "medium",
+    "anchor": "E002",
+    "note": "author order as printed; affiliations and e-mail addresses are not exported"
+   },
+   "year": {
+    "value": 2024,
+    "origin": "most frequent year in the front matter",
+    "confidence": "low",
+    "note": "no dated line found; verify"
+   },
+   "venue": {
+    "value": "Journal of Imaginary Biomaterials",
+    "origin": "header/footer/front text of page 1-2",
+    "confidence": "low",
+    "note": "verbatim line fragment; verify"
+   },
+   "missing": []
+  }
+ ],
+ "references": [
+  [
+   {
+    "n": 1,
+    "text": "Discher DE, Mooney DJ, Zandstra PW. Growth factors, matrices, and forces combine and control stem cells. Science. 2009;324:1673-1677. doi:10.1126/science.1171643",
+    "doi": "10.1126/science.1171643",
+    "year": 2009,
+    "first_author": "Discher"
+   },
+   {
+    "n": 2,
+    "text": "Engler AJ, Sen S, Sweeney HL, Discher DE. Matrix elasticity directs stem cell lineage specification. Cell. 2006;126:677-689. doi:10.1016/j.cell.2006.06.044",
+    "doi": "10.1016/j.cell.2006.06.044",
+    "year": 2006,
+    "first_author": "Engler"
+   }
+  ]
+ ]
+}

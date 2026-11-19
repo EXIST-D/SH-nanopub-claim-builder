@@ -1,0 +1,101 @@
+=== claim id=F1
+text: Mineralised nodule area on 10 kPa gels is 3.3-fold higher than on 40 kPa gels.
+s: mineralised nodule area on 10 kPa gels
+p: outperforms
+o: mineralised nodule area on 40 kPa gels
+ev: E007.1
+quote: Mineralised nodule area on 10 kPa gels was 3.3-fold higher than on 40 kPa gels
+
+=== claim id=F2
+text: Mineralised nodule area on 40 kPa gels is higher than on 10 kPa gels.
+s: mineralised nodule area on 40 kPa gels
+p: outperforms
+o: mineralised nodule area on 10 kPa gels
+cond: primary rat osteoblasts; 21 days
+ev: E007.1
+quote: Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels
+
+=== claim id=F3
+text: Cell density causes the nodule area.
+s: cell density
+p: causes
+o: nodule area
+ev: E007.3
+quote: Nodule area did not correlate with cell density at day 21
+
+=== claim id=F4
+text: Verteporfin reduces nodule area on 40 kPa gels by 22% and the fraction of nuclei with nuclear YAP is 31% on 10 kPa gels while it inhibits all osteoblasts.
+s: verteporfin
+p: decreases
+o: nodule area
+ev: E008.1, E008.2
+
+=== claim id=F5
+text: Soft gels always increase mineralisation in all osteoblasts.
+s: soft gels
+p: increases
+o: mineralisation
+ev: E007.1
+
+=== claim id=F6
+text: It reduces nodule area.
+s: It
+p: decreases
+o: nodule area
+ev: E008.2
+
+=== claim id=F7
+text: Nodule area differs between 10 kPa and 40 kPa gels.
+s: nodule area on 10 kPa gels
+p: differs_from
+o: nodule area on 40 kPa gels
+ev: E009.1
+quote: nodule area did not differ between 10 kPa and 40 kPa gels
+
+=== claim id=F8
+text: YAP signalling demonstrates that it fully explains the stiffness response.
+s: YAP signalling
+p: regulates
+o: stiffness response
+modality: asserted
+ev: E008.3
+quote: These data suggest that YAP signalling mediates part of the stiffness response
+
+=== claim id=F9
+text: Substrate stiffness influences stem cell fate (found in this study).
+s: substrate stiffness
+p: regulates
+o: stem cell fate
+origin: this_paper
+ev: E005.1
+
+=== claim id=F10
+text: Nodule area does not differ between 10 kPa and 40 kPa gels.
+s: nodule area on 10 kPa gels
+p: differs_from
+o: nodule area on 40 kPa gels
+polarity: negative
+ev: E009.1
+
+=== claim id=F11
+text: Verteporfin reduces nodule area on 40 kPa gels by 22%.
+s: verteporfin
+p: decreases
+o: nodule area
+cond: 40 kPa gels
+ev: E008, E006, E007
+quote: Treatment with the YAP inhibitor verteporfin reduced nodule area on 40 kPa gels by 22%
+
+=== claim id=F12
+text: Gel stiffness affects mineralisation in vivo scaffolds.
+s: gel stiffness
+p: regulates
+o: mineralisation
+ev: E999.1
+
+=== claim id=F13
+text: Verteporfin reduces nodule area on 40 kPa gels by 22%.
+s: verteporfin
+p: decreases
+o: nodule area
+cond: 40 kPa gels

@@ -1,0 +1,2958 @@
+{
+ "schema": "np-claim-builder/1",
+ "tool_version": "1.0.0",
+ "generated": "2026-11-19T16:28:50Z",
+ "sources": [
+  {
+   "source_id": "S1",
+   "iri": "https://doi.org/10.9999/jib.2024.0042",
+   "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+   "authors": [
+    "Mara Lindqvist",
+    "Tomas Okafor",
+    "Yuki Hartmann"
+   ],
+   "year": 2024,
+   "venue": "Journal of Imaginary Biomaterials",
+   "doi": "10.9999/jib.2024.0042",
+   "arxiv_id": null,
+   "pmid": null,
+   "version": null,
+   "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+   "file_name": "mini_paper.md",
+   "pages": null,
+   "fields": {
+    "doi": {
+     "origin": "front-matter/header text",
+     "confidence": "high"
+    },
+    "title": {
+     "origin": "title block",
+     "confidence": "high"
+    },
+    "authors": {
+     "origin": "front matter of page 1",
+     "confidence": "medium"
+    },
+    "year": {
+     "origin": "most frequent year in the front matter",
+     "confidence": "low"
+    },
+    "venue": {
+     "origin": "header/footer/front text of page 1-2",
+     "confidence": "low"
+    }
+   },
+   "missing": [],
+   "conflicts": []
+  }
+ ],
+ "counts": {
+  "nanopublications": 18,
+  "other_status": 1,
+  "rejected_claims": 0
+ },
+ "vocabulary": {
+  "namespace": "https://example.org/np-claim-builder/vocab#",
+  "relations": {
+   "increases": {
+    "label": "increases",
+    "definition": "subject raises the level / rate / amount / frequency of the object",
+    "directional": true,
+    "close_match": "obo:RO_0002213",
+    "close_match_label": "positively regulates"
+   },
+   "decreases": {
+    "label": "decreases",
+    "definition": "subject lowers the level / rate / amount / frequency of the object",
+    "directional": true,
+    "close_match": "obo:RO_0002212",
+    "close_match_label": "negatively regulates"
+   },
+   "activates": {
+    "label": "activates",
+    "definition": "subject switches on or triggers the object (pathway, enzyme, process)",
+    "directional": true,
+    "close_match": "obo:RO_0002213",
+    "close_match_label": "positively regulates"
+   },
+   "inhibits": {
+    "label": "inhibits",
+    "definition": "subject blocks or switches off the object",
+    "directional": true,
+    "close_match": "obo:RO_0002212",
+    "close_match_label": "negatively regulates"
+   },
+   "regulates": {
+    "label": "regulates",
+    "definition": "subject controls the object without a stated direction of effect",
+    "directional": true,
+    "close_match": "obo:RO_0002211",
+    "close_match_label": "regulates"
+   },
+   "causes": {
+    "label": "causes",
+    "definition": "subject brings about the object (a causal claim, not a mere association)",
+    "directional": true,
+    "close_match": "obo:RO_0002410",
+    "close_match_label": "causally related to"
+   },
+   "prevents": {
+    "label": "prevents",
+    "definition": "subject stops the object from occurring",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "treats": {
+    "label": "treats",
+    "definition": "subject (drug, intervention) is used to treat or ameliorate the object (condition)",
+    "directional": true,
+    "close_match": "obo:RO_0002606",
+    "close_match_label": "is substance that treats"
+   },
+   "associated_with": {
+    "label": "is associated with",
+    "definition": "subject and object co-occur / covary; no direction or causation claimed",
+    "directional": false,
+    "close_match": "obo:RO_0002610",
+    "close_match_label": "correlated with"
+   },
+   "interacts_with": {
+    "label": "interacts with",
+    "definition": "subject and object physically or functionally interact",
+    "directional": false,
+    "close_match": "obo:RO_0002434",
+    "close_match_label": "interacts with"
+   },
+   "part_of": {
+    "label": "is part of",
+    "definition": "subject is a component of the object",
+    "directional": true,
+    "close_match": "obo:BFO_0000050",
+    "close_match_label": "part of"
+   },
+   "located_in": {
+    "label": "is located in",
+    "definition": "subject is found in / localised to the object (place, tissue, compartment, population)",
+    "directional": true,
+    "close_match": "obo:RO_0001025",
+    "close_match_label": "located in"
+   },
+   "has_phenotype": {
+    "label": "has phenotype",
+    "definition": "subject (organism, genotype) shows the object phenotype",
+    "directional": true,
+    "close_match": "obo:RO_0002200",
+    "close_match_label": "has phenotype"
+   },
+   "has_value": {
+    "label": "has value",
+    "definition": "subject quantity / property has the numeric value or range given as object (add value:/unit:)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "outperforms": {
+    "label": "outperforms",
+    "definition": "subject (method, treatment) does better than the object on a stated measure (condition names the measure and data)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "consistent_with": {
+    "label": "is consistent with",
+    "definition": "subject (observation, result, model) agrees with the object (prediction, theory, earlier result); use polarity=negative for 'inconsistent with'",
+    "directional": false,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "differs_from": {
+    "label": "differs from",
+    "definition": "subject and object differ on a stated property",
+    "directional": false,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "uses": {
+    "label": "uses",
+    "definition": "subject (study, method) employs the object (tool, dataset, technique, material)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "evaluated_on": {
+    "label": "is evaluated on",
+    "definition": "subject (method, model) is tested on the object (dataset, cohort, benchmark)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "trained_on": {
+    "label": "is trained on",
+    "definition": "subject (model) is fitted on the object (data)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "produces": {
+    "label": "produces",
+    "definition": "subject process / device yields the object",
+    "directional": true,
+    "close_match": "obo:RO_0002234",
+    "close_match_label": "has output"
+   },
+   "requires": {
+    "label": "requires",
+    "definition": "subject needs the object as condition or input",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "enables": {
+    "label": "enables",
+    "definition": "subject makes the object possible",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "predicts": {
+    "label": "predicts",
+    "definition": "subject (variable, model) predicts or forecasts the object",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "detects": {
+    "label": "detects",
+    "definition": "subject (instrument, assay, analysis) detects / identifies the object",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "is_a": {
+    "label": "is a",
+    "definition": "subject is an instance or subclass of the object (definition / classification)",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "derived_from": {
+    "label": "is derived from",
+    "definition": "subject is obtained from / extends the object",
+    "directional": true,
+    "close_match": null,
+    "close_match_label": null
+   },
+   "other": {
+    "label": "other relation",
+    "definition": "no term above fits; the free-text relation is kept in `p_label` and the claim is flagged for review",
+    "directional": false,
+    "close_match": null,
+    "close_match_label": null
+   }
+  }
+ },
+ "nanopubs": [
+  {
+   "np_id": "npbfd9b15e4dcf",
+   "claim_id": "C1",
+   "status": "reported",
+   "claim_text": "Mineralised nodule area on 10 kPa gels is higher than on 40 kPa gels (2.3-fold).",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "mineralised nodule area on 10 kPa gels",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "outperforms",
+     "label": "outperforms",
+     "iri": "https://example.org/np-claim-builder/vocab#outperforms",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "mineralised nodule area on 40 kPa gels",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": "primary rat osteoblasts, 21 days in osteogenic medium; ratio 2.3-fold; p = 0.004, n = 6",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels",
+     "locator": {
+      "unit": "E007",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t11",
+      "section_id": "§3.1",
+      "section_title": "Mineralisation",
+      "section_path": "Results > Mineralisation",
+      "char_start": 0,
+      "char_end": 78,
+      "prefix": "",
+      "suffix": " (p = 0.004, n = 6). Cells on 1 kPa gels"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.73,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E007.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "mineralisation",
+    "stiffness"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np37d1ca11716b",
+   "claim_id": "C2",
+   "status": "reported",
+   "claim_text": "Mineralised nodule area on 1 kPa gels does not differ significantly from that on 40 kPa gels.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "mineralised nodule area on 1 kPa gels",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "differs_from",
+     "label": "differs from",
+     "iri": "https://example.org/np-claim-builder/vocab#differs_from",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": false
+    },
+    "object": {
+     "label": "mineralised nodule area on 40 kPa gels",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": "primary rat osteoblasts; 21 days",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "indirect",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "showed no significant difference from 40 kPa gels",
+     "locator": {
+      "unit": "E007",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t11",
+      "section_id": "§3.1",
+      "section_title": "Mineralisation",
+      "section_path": "Results > Mineralisation",
+      "char_start": 142,
+      "char_end": 191,
+      "prefix": "ls on 1 kPa gels formed few nodules and ",
+      "suffix": ". Nodule area did not correlate with cel"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "medium",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is indirect",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.67,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E007.2"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "mineralisation",
+    "stiffness"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np2dbe9bf36381",
+   "claim_id": "C3",
+   "status": "reported",
+   "claim_text": "Nodule area does not correlate with cell density at day 21.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "nodule area",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "associated_with",
+     "label": "is associated with",
+     "iri": "https://example.org/np-claim-builder/vocab#associated_with",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002610",
+     "close_match_label": "correlated with",
+     "free_text": null,
+     "directional": false
+    },
+    "object": {
+     "label": "cell density at day 21",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": null,
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Nodule area did not correlate with cell density at day 21",
+     "locator": {
+      "unit": "E007",
+      "sentences": "3",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t11",
+      "section_id": "§3.1",
+      "section_title": "Mineralisation",
+      "section_path": "Results > Mineralisation",
+      "char_start": 193,
+      "char_end": 250,
+      "prefix": "ignificant difference from 40 kPa gels. ",
+      "suffix": "."
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.88,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E007.3"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "mineralisation"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np6014ebf52a44",
+   "claim_id": "C4",
+   "status": "reported",
+   "claim_text": "The fraction of nuclei with nuclear YAP is 31% on 10 kPa gels.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "fraction of nuclei with nuclear YAP on 10 kPa gels",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "has_value",
+     "label": "has value",
+     "iri": "https://example.org/np-claim-builder/vocab#has_value",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "31%",
+     "id": null,
+     "iri": null,
+     "value": 31.0,
+     "unit": "%",
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "The fraction of nuclei with nuclear YAP was 31% on 10 kPa gels",
+     "locator": {
+      "unit": "E008",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t13",
+      "section_id": "§3.2",
+      "section_title": "YAP localisation",
+      "section_path": "Results > YAP localisation",
+      "char_start": 0,
+      "char_end": 62,
+      "prefix": "",
+      "suffix": " and 58% on 40 kPa gels. Treatment with"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E008.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np52d767d901bc",
+   "claim_id": "C5",
+   "status": "reported",
+   "claim_text": "The fraction of nuclei with nuclear YAP is 58% on 40 kPa gels.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "fraction of nuclei with nuclear YAP on 40 kPa gels",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "has_value",
+     "label": "has value",
+     "iri": "https://example.org/np-claim-builder/vocab#has_value",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "58%",
+     "id": null,
+     "iri": null,
+     "value": 58.0,
+     "unit": "%",
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "58% on 40 kPa gels",
+     "locator": {
+      "unit": "E008",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t13",
+      "section_id": "§3.2",
+      "section_title": "YAP localisation",
+      "section_path": "Results > YAP localisation",
+      "char_start": 67,
+      "char_end": 85,
+      "prefix": "nuclear YAP was 31% on 10 kPa gels and ",
+      "suffix": ". Treatment with the YAP inhibitor verte"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E008.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np2dd75a0c2921",
+   "claim_id": "C6",
+   "status": "reported",
+   "claim_text": "YAP signalling mediates part of the stiffness response of osteoblasts.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "YAP signalling",
+     "id": "NCBIGene:10413",
+     "iri": "https://identifiers.org/ncbigene:10413",
+     "id_origin": "asserted by the claim author (not in the paper)"
+    },
+    "relation": {
+     "term": "regulates",
+     "label": "regulates",
+     "iri": "https://example.org/np-claim-builder/vocab#regulates",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002211",
+     "close_match_label": "regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "osteoblast response to substrate stiffness",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": "primary rat osteoblasts on polyacrylamide gels; only part of the response",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "YAP signalling mediates part of the stiffness response",
+     "locator": {
+      "unit": "E008",
+      "sentences": "3",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t13",
+      "section_id": "§3.2",
+      "section_title": "YAP localisation",
+      "section_path": "Results > YAP localisation",
+      "char_start": 249,
+      "char_end": 303,
+      "prefix": "on 10 kPa gels. These data suggest that ",
+      "suffix": "."
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "medium",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers",
+     "reduced by: identifier_origin"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "warn",
+    "issues": [
+     {
+      "severity": "warn",
+      "kind": "identifier_origin",
+      "detail": "subject identifier NCBIGene:10413 does not occur in the paper: it comes from the claim author's knowledge, not from the source (exported with origin=asserted)"
+     }
+    ],
+    "support": 0.58,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E008.3"
+    ]
+   },
+   "review": {
+    "needs_human": true,
+    "status": "machine-extracted; unreviewed",
+    "reasons": [
+     "identifier_origin"
+    ]
+   },
+   "note": null,
+   "tags": [
+    "mechanotransduction",
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "npddcff292cf62",
+   "claim_id": "C7",
+   "status": "reported",
+   "claim_text": "The YAP inhibitor verteporfin reduces nodule area on 40 kPa gels by 22%.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "verteporfin",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "decreases",
+     "label": "decreases",
+     "iri": "https://example.org/np-claim-builder/vocab#decreases",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002212",
+     "close_match_label": "negatively regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "nodule area",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": "40 kPa gels; reduction of 22%",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Treatment with the YAP inhibitor verteporfin reduced nodule area on 40 kPa gels by 22%",
+     "locator": {
+      "unit": "E008",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t13",
+      "section_id": "§3.2",
+      "section_title": "YAP localisation",
+      "section_path": "Results > YAP localisation",
+      "char_start": 87,
+      "char_end": 173,
+      "prefix": "on 10 kPa gels and 58% on 40 kPa gels. ",
+      "suffix": ", but it did not change nodule area on 1"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.91,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E008.2"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "inhibitor",
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np53595a39b370",
+   "claim_id": "C8",
+   "status": "reported",
+   "claim_text": "Verteporfin does not change nodule area on 10 kPa gels.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "verteporfin",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "regulates",
+     "label": "regulates",
+     "iri": "https://example.org/np-claim-builder/vocab#regulates",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002211",
+     "close_match_label": "regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "nodule area",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": "10 kPa gels",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "it did not change nodule area on 10 kPa gels",
+     "locator": {
+      "unit": "E008",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t13",
+      "section_id": "§3.2",
+      "section_title": "YAP localisation",
+      "section_path": "Results > YAP localisation",
+      "char_start": 179,
+      "char_end": 223,
+      "prefix": "nodule area on 40 kPa gels by 22%, but ",
+      "suffix": ". These data suggest that YAP signalling"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.88,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E008.2"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "inhibitor",
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np564fb57682bd",
+   "claim_id": "C9",
+   "status": "reported",
+   "claim_text": "In the human osteosarcoma line Saos-2, nodule area does not differ between 10 kPa and 40 kPa gels.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "nodule area of Saos-2 cells on 10 kPa gels",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "differs_from",
+     "label": "differs from",
+     "iri": "https://example.org/np-claim-builder/vocab#differs_from",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": false
+    },
+    "object": {
+     "label": "nodule area of Saos-2 cells on 40 kPa gels",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": "human osteosarcoma line Saos-2",
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "nodule area did not differ between 10 kPa and 40 kPa gels",
+     "locator": {
+      "unit": "E009",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t15",
+      "section_id": "§3.3",
+      "section_title": "Human cell line",
+      "section_path": "Results > Human cell line",
+      "char_start": 39,
+      "char_end": 96,
+      "prefix": "In the human osteosarcoma line Saos-2, ",
+      "suffix": "."
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.92,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E009.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "cell-line"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "npcfa20edd8d35",
+   "claim_id": "C10",
+   "status": "reported",
+   "claim_text": "Osteoblasts were cultured on polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa.",
+   "claim_type": "method",
+   "assertion": {
+    "subject": {
+     "label": "osteoblast culture",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "uses",
+     "label": "uses",
+     "iri": "https://example.org/np-claim-builder/vocab#uses",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "polyacrylamide gels (Young's modulus 1, 10 or 40 kPa)",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": "seeded at 5,000 cells per cm2; 21 days in osteogenic medium",
+    "claim_type": "method"
+   },
+   "modality": "asserted",
+   "evidence_type": "indirect",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa",
+     "locator": {
+      "unit": "E006",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t8",
+      "section_id": "§2",
+      "section_title": "Methods",
+      "section_path": "Methods",
+      "char_start": 156,
+      "char_end": 215,
+      "prefix": "s were seeded at 5,000 cells per cm2 on ",
+      "suffix": " and cultured for 21 days in osteogenic"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "medium",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is indirect",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E006.2"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "methods"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np41f8f07dea83",
+   "claim_id": "C11",
+   "status": "reported",
+   "claim_text": "The primary osteoblasts were isolated from the calvaria of neonatal Sprague-Dawley rats.",
+   "claim_type": "method",
+   "assertion": {
+    "subject": {
+     "label": "primary osteoblasts",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "derived_from",
+     "label": "is derived from",
+     "iri": "https://example.org/np-claim-builder/vocab#derived_from",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "calvaria of neonatal Sprague-Dawley rats",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "method"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "isolated from the calvaria of neonatal Sprague-Dawley rats",
+     "locator": {
+      "unit": "E006",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t8",
+      "section_id": "§2",
+      "section_title": "Methods",
+      "section_path": "Methods",
+      "char_start": 25,
+      "char_end": 83,
+      "prefix": "Primary osteoblasts were ",
+      "suffix": " and pooled from one litter. Cells were"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E006.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "methods"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np008af33d9d49",
+   "claim_id": "C12",
+   "status": "reported",
+   "claim_text": "YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel.",
+   "claim_type": "method",
+   "assertion": {
+    "subject": {
+     "label": "YAP localisation scoring",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "uses",
+     "label": "uses",
+     "iri": "https://example.org/np-claim-builder/vocab#uses",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "immunofluorescence of at least 200 nuclei per gel",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "method"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel",
+     "locator": {
+      "unit": "E006",
+      "sentences": "4",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t8",
+      "section_id": "§2",
+      "section_title": "Methods",
+      "section_path": "Methods",
+      "char_start": 380,
+      "char_end": 460,
+      "prefix": "quantified in six wells per condition. ",
+      "suffix": "."
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E006.4"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "methods",
+    "yap"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "npd9a1a26e75a0",
+   "claim_id": "C13",
+   "status": "reported",
+   "claim_text": "Donor variability was not assessed because all experiments used cells from a single litter.",
+   "claim_type": "limitation",
+   "assertion": {
+    "subject": {
+     "label": "donor variability",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "other",
+     "label": "other relation",
+     "iri": "https://example.org/np-claim-builder/vocab#other",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": "other",
+     "directional": false
+    },
+    "object": {
+     "label": "assessment in this study",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": null,
+    "claim_type": "limitation"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "All experiments used cells from a single litter, so donor variability was not assessed",
+     "locator": {
+      "unit": "E010",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t17",
+      "section_id": "§4",
+      "section_title": "Discussion",
+      "section_path": "Discussion",
+      "char_start": 102,
+      "char_end": 188,
+      "prefix": "promote osteogenic differentiation [1]. ",
+      "suffix": ". Gel stiffness was verified only at day"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "medium",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers",
+     "reduced by: relation_free_text"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "warn",
+    "issues": [
+     {
+      "severity": "warn",
+      "kind": "relation_free_text",
+      "detail": "relation 'other' is not in the controlled vocabulary: it is exported as v:other with the text kept; pick one of: increases, decreases, activates, inhibits, regulates, causes, prevents, treats, associated_with, interacts_with, part_of, located_in, has_phenotype, has_value, outperforms, consistent_with, differs_from, uses, evaluated_on, trained_on, produces, requires, enables, predicts, detects, is_a, derived_from"
+     }
+    ],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E010.2"
+    ]
+   },
+   "review": {
+    "needs_human": true,
+    "status": "machine-extracted; unreviewed",
+    "reasons": [
+     "relation_free_text"
+    ]
+   },
+   "note": null,
+   "tags": [
+    "limitation"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np92da0b759a08",
+   "claim_id": "C14",
+   "status": "reported",
+   "claim_text": "Gel stiffening during culture may contribute to the observed result.",
+   "claim_type": "limitation",
+   "assertion": {
+    "subject": {
+     "label": "gel stiffening during culture",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "causes",
+     "label": "causes",
+     "iri": "https://example.org/np-claim-builder/vocab#causes",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002410",
+     "close_match_label": "causally related to",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "higher mineralisation on 10 kPa gels than on 40 kPa gels",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "limitation"
+   },
+   "modality": "hypothesis",
+   "evidence_type": "indirect",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "We cannot exclude that gel stiffening during culture contributes to the result",
+     "locator": {
+      "unit": "E010",
+      "sentences": "4",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t17",
+      "section_id": "§4",
+      "section_title": "Discussion",
+      "section_path": "Discussion",
+      "char_start": 232,
+      "char_end": 310,
+      "prefix": "l stiffness was verified only at day 0. ",
+      "suffix": ". Future work should test in vivo scaffo"
+     }
+    },
+    {
+     "kind": "author_quote",
+     "quote": "Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels",
+     "locator": {
+      "unit": "E007",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t11",
+      "section_id": "§3.1",
+      "section_title": "Mineralisation",
+      "section_path": "Results > Mineralisation",
+      "char_start": 0,
+      "char_end": 78,
+      "prefix": "",
+      "suffix": " (p = 0.004, n = 6). Cells on 1 kPa gels"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "medium",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is indirect",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.67,
+    "numbers": "ok",
+    "quotes": [
+     "verified",
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E007.1",
+     "E010.4"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "confound",
+    "limitation"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "npa19659fc2153",
+   "claim_id": "C15",
+   "status": "reported",
+   "claim_text": "Substrate stiffness influences stem cell fate (cited background).",
+   "claim_type": "background",
+   "assertion": {
+    "subject": {
+     "label": "substrate stiffness",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "regulates",
+     "label": "regulates",
+     "iri": "https://example.org/np-claim-builder/vocab#regulates",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002211",
+     "close_match_label": "regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "stem cell fate",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "background"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Substrate stiffness is known to influence stem cell fate [1]",
+     "locator": {
+      "unit": "E005",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t6",
+      "section_id": "§1",
+      "section_title": "Introduction",
+      "section_path": "Introduction",
+      "char_start": 0,
+      "char_end": 60,
+      "prefix": "",
+      "suffix": ". Engler et al. showed that matrix elast"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "cited",
+    "computed_origin": "cited",
+    "cited": [
+     {
+      "marker": "[1]",
+      "ref_n": 1,
+      "ref_text": "Discher DE, Mooney DJ, Zandstra PW. Growth factors, matrices, and forces combine and control stem cells. Science. 2009;324:1673-1677. doi:10.1126/science.1171643",
+      "doi": "10.1126/science.1171643"
+     }
+    ]
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.62,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E005.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "background"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np355f3f85edc0",
+   "claim_id": "C16",
+   "status": "reported",
+   "claim_text": "Matrix elasticity directs lineage specification of mesenchymal stem cells (Engler et al.).",
+   "claim_type": "background",
+   "assertion": {
+    "subject": {
+     "label": "matrix elasticity",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "regulates",
+     "label": "regulates",
+     "iri": "https://example.org/np-claim-builder/vocab#regulates",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002211",
+     "close_match_label": "regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "lineage specification of mesenchymal stem cells",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "background"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Engler et al. showed that matrix elasticity directs lineage specification of mesenchymal stem cells [2]",
+     "locator": {
+      "unit": "E005",
+      "sentences": "2",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t6",
+      "section_id": "§1",
+      "section_title": "Introduction",
+      "section_path": "Introduction",
+      "char_start": 62,
+      "char_end": 165,
+      "prefix": "known to influence stem cell fate [1]. ",
+      "suffix": ". It has been proposed that stiffer matr"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "cited",
+    "computed_origin": "cited",
+    "cited": [
+     {
+      "marker": "[2]",
+      "ref_n": 2,
+      "ref_text": "Engler AJ, Sen S, Sweeney HL, Discher DE. Matrix elasticity directs stem cell lineage specification. Cell. 2006;126:677-689. doi:10.1016/j.cell.2006.06.044",
+      "doi": "10.1016/j.cell.2006.06.044"
+     }
+    ]
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E005.2"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "background"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np64b69cfe6903",
+   "claim_id": "C17",
+   "status": "reported",
+   "claim_text": "It has been proposed that stiffer matrices promote osteogenic differentiation.",
+   "claim_type": "hypothesis",
+   "assertion": {
+    "subject": {
+     "label": "stiffer matrices",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "increases",
+     "label": "increases",
+     "iri": "https://example.org/np-claim-builder/vocab#increases",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002213",
+     "close_match_label": "positively regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "osteogenic differentiation",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "hypothesis"
+   },
+   "modality": "hypothesis",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "It has been proposed that stiffer matrices promote osteogenic differentiation",
+     "locator": {
+      "unit": "E005",
+      "sentences": "3",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t6",
+      "section_id": "§1",
+      "section_title": "Introduction",
+      "section_path": "Introduction",
+      "char_start": 167,
+      "char_end": 244,
+      "prefix": "fication of mesenchymal stem cells [2]. ",
+      "suffix": ", but direct tests on primary osteoblast"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "background",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 1.0,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": "ok",
+    "minimal_anchors": [
+     "E005.3"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "background"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "npf461e370f3db",
+   "claim_id": "C18",
+   "status": "reported",
+   "claim_text": "The findings of this study contradict the view that stiffer matrices always promote osteogenic differentiation.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "findings of this study",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "consistent_with",
+     "label": "is consistent with",
+     "iri": "https://example.org/np-claim-builder/vocab#consistent_with",
+     "close_match": null,
+     "close_match_label": null,
+     "free_text": null,
+     "directional": false
+    },
+    "object": {
+     "label": "the view that stiffer matrices always promote osteogenic differentiation",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "negative",
+    "conditions": null,
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [
+    {
+     "kind": "author_quote",
+     "quote": "Our findings contradict the view that stiffer matrices always promote osteogenic differentiation",
+     "locator": {
+      "unit": "E010",
+      "sentences": "1",
+      "page": null,
+      "pages": [],
+      "bbox": null,
+      "block": "t17",
+      "section_id": "§4",
+      "section_title": "Discussion",
+      "section_path": "Discussion",
+      "char_start": 0,
+      "char_end": 96,
+      "prefix": "",
+      "suffix": " [1]. All experiments used cells from a"
+     }
+    }
+   ],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "high",
+    "basis": [
+     "quote verified verbatim",
+     "evidence is direct",
+     "no numbers"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.9,
+    "numbers": "ok",
+    "quotes": [
+     "verified"
+    ],
+    "direction": null,
+    "minimal_anchors": [
+     "E010.1"
+    ]
+   },
+   "review": {
+    "needs_human": false,
+    "status": "machine-extracted; unreviewed",
+    "reasons": []
+   },
+   "note": null,
+   "tags": [
+    "discussion"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  },
+  {
+   "np_id": "np800edf4676ae",
+   "claim_id": "C19",
+   "status": "unsupported",
+   "claim_text": "The effect of substrate stiffness on mineralisation is mediated by integrin beta-1.",
+   "claim_type": "finding",
+   "assertion": {
+    "subject": {
+     "label": "integrin beta-1",
+     "id": null,
+     "iri": null,
+     "id_origin": null
+    },
+    "relation": {
+     "term": "regulates",
+     "label": "regulates",
+     "iri": "https://example.org/np-claim-builder/vocab#regulates",
+     "close_match": "http://purl.obolibrary.org/obo/RO_0002211",
+     "close_match_label": "regulates",
+     "free_text": null,
+     "directional": true
+    },
+    "object": {
+     "label": "osteoblast response to substrate stiffness",
+     "id": null,
+     "iri": null,
+     "value": null,
+     "unit": null,
+     "id_origin": null
+    },
+    "polarity": "positive",
+    "conditions": null,
+    "claim_type": "finding"
+   },
+   "modality": "asserted",
+   "evidence_type": "direct",
+   "evidence": [],
+   "source": {
+    "source_id": "S1",
+    "iri": "https://doi.org/10.9999/jib.2024.0042",
+    "title": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "authors": [
+     "Mara Lindqvist",
+     "Tomas Okafor",
+     "Yuki Hartmann"
+    ],
+    "year": 2024,
+    "venue": "Journal of Imaginary Biomaterials",
+    "doi": "10.9999/jib.2024.0042",
+    "arxiv_id": null,
+    "pmid": null,
+    "version": null,
+    "sha256": "3e471272bcfe00cceca8340071acfc401d4a2c58ea7e407beb74d2d9b3e3fd10",
+    "file_name": "mini_paper.md",
+    "pages": null,
+    "fields": {
+     "doi": {
+      "origin": "front-matter/header text",
+      "confidence": "high"
+     },
+     "title": {
+      "origin": "title block",
+      "confidence": "high"
+     },
+     "authors": {
+      "origin": "front matter of page 1",
+      "confidence": "medium"
+     },
+     "year": {
+      "origin": "most frequent year in the front matter",
+      "confidence": "low"
+     },
+     "venue": {
+      "origin": "header/footer/front text of page 1-2",
+      "confidence": "low"
+     }
+    },
+    "missing": [],
+    "conflicts": []
+   },
+   "attribution": {
+    "origin": "this_paper",
+    "computed_origin": "this_paper",
+    "cited": []
+   },
+   "confidence": {
+    "level": "low",
+    "basis": [
+     "evidence is direct",
+     "numbers present in evidence"
+    ],
+    "scope": "extraction fidelity: how well the evidence supports this wording; not a judgement of scientific truth"
+   },
+   "checks": {
+    "status": "ok",
+    "issues": [],
+    "support": 0.0,
+    "numbers": "ok",
+    "quotes": [
+     "none"
+    ],
+    "direction": null,
+    "minimal_anchors": null
+   },
+   "review": {
+    "needs_human": true,
+    "status": "machine-extracted; unreviewed",
+    "reasons": [
+     "low_confidence",
+     "unsupported"
+    ]
+   },
+   "note": "searched the whole paper for integrin / beta-1 / adhesion: the paper does not mention integrins; the claim comes from background knowledge and is NOT supported by the source.",
+   "tags": [
+    "unsupported-example"
+   ],
+   "created": "2026-11-19T16:28:50Z",
+   "tool_version": "1.0.0",
+   "schema": "np-claim-builder/1"
+  }
+ ]
+}

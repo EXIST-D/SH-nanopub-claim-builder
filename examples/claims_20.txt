@@ -1,0 +1,198 @@
+=== claim id=C1
+text: Mineralised nodule area on 10 kPa gels is higher than on 40 kPa gels (2.3-fold).
+s: mineralised nodule area on 10 kPa gels
+p: outperforms
+o: mineralised nodule area on 40 kPa gels
+cond: primary rat osteoblasts, 21 days in osteogenic medium; ratio 2.3-fold; p = 0.004, n = 6
+ev: E007.1
+quote: Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels
+tags: mineralisation, stiffness
+
+=== claim id=C2
+text: Mineralised nodule area on 1 kPa gels does not differ significantly from that on 40 kPa gels.
+s: mineralised nodule area on 1 kPa gels
+p: differs_from
+o: mineralised nodule area on 40 kPa gels
+polarity: negative
+cond: primary rat osteoblasts; 21 days
+ev: E007.2
+quote: showed no significant difference from 40 kPa gels
+tags: mineralisation, stiffness
+
+=== claim id=C3
+text: Nodule area does not correlate with cell density at day 21.
+s: nodule area
+p: associated_with
+o: cell density at day 21
+polarity: negative
+ev: E007.3
+quote: Nodule area did not correlate with cell density at day 21
+tags: mineralisation
+
+=== claim id=C4
+text: The fraction of nuclei with nuclear YAP is 31% on 10 kPa gels.
+s: fraction of nuclei with nuclear YAP on 10 kPa gels
+p: has_value
+o: 31%
+ev: E008.1
+quote: The fraction of nuclei with nuclear YAP was 31% on 10 kPa gels
+tags: yap
+
+=== claim id=C5
+text: The fraction of nuclei with nuclear YAP is 58% on 40 kPa gels.
+s: fraction of nuclei with nuclear YAP on 40 kPa gels
+p: has_value
+o: 58%
+ev: E008.1
+quote: 58% on 40 kPa gels
+tags: yap
+
+=== claim id=C6
+text: YAP signalling mediates part of the stiffness response of osteoblasts.
+s: YAP signalling
+p: regulates
+o: osteoblast response to substrate stiffness
+cond: primary rat osteoblasts on polyacrylamide gels; only part of the response
+ev: E008.3
+quote: YAP signalling mediates part of the stiffness response
+s_id: NCBIGene:10413
+tags: yap, mechanotransduction
+
+=== claim id=C7
+text: The YAP inhibitor verteporfin reduces nodule area on 40 kPa gels by 22%.
+s: verteporfin
+p: decreases
+o: nodule area
+cond: 40 kPa gels; reduction of 22%
+ev: E008.2
+quote: Treatment with the YAP inhibitor verteporfin reduced nodule area on 40 kPa gels by 22%
+tags: yap, inhibitor
+
+=== claim id=C8
+text: Verteporfin does not change nodule area on 10 kPa gels.
+s: verteporfin
+p: regulates
+o: nodule area
+polarity: negative
+cond: 10 kPa gels
+ev: E008.2
+quote: it did not change nodule area on 10 kPa gels
+tags: yap, inhibitor
+
+=== claim id=C9
+text: In the human osteosarcoma line Saos-2, nodule area does not differ between 10 kPa and 40 kPa gels.
+s: nodule area of Saos-2 cells on 10 kPa gels
+p: differs_from
+o: nodule area of Saos-2 cells on 40 kPa gels
+polarity: negative
+cond: human osteosarcoma line Saos-2
+ev: E009.1
+quote: nodule area did not differ between 10 kPa and 40 kPa gels
+tags: cell-line
+
+=== claim id=C10
+text: Osteoblasts were cultured on polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa.
+s: osteoblast culture
+p: uses
+o: polyacrylamide gels (Young's modulus 1, 10 or 40 kPa)
+cond: seeded at 5,000 cells per cm2; 21 days in osteogenic medium
+type: method
+ev: E006.2
+quote: polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa
+tags: methods
+
+=== claim id=C11
+text: The primary osteoblasts were isolated from the calvaria of neonatal Sprague-Dawley rats.
+s: primary osteoblasts
+p: derived_from
+o: calvaria of neonatal Sprague-Dawley rats
+type: method
+ev: E006.1
+quote: isolated from the calvaria of neonatal Sprague-Dawley rats
+tags: methods
+
+=== claim id=C12
+text: YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel.
+s: YAP localisation scoring
+p: uses
+o: immunofluorescence of at least 200 nuclei per gel
+type: method
+ev: E006.4
+quote: YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel
+tags: methods, yap
+
+=== claim id=C13
+text: Donor variability was not assessed because all experiments used cells from a single litter.
+s: donor variability
+p: other
+o: assessment in this study
+polarity: negative
+type: limitation
+ev: E010.2
+quote: All experiments used cells from a single litter, so donor variability was not assessed
+tags: limitation
+
+=== claim id=C14
+text: Gel stiffening during culture may contribute to the observed result.
+s: gel stiffening during culture
+p: causes
+o: higher mineralisation on 10 kPa gels than on 40 kPa gels
+modality: hypothesis
+type: limitation
+evtype: indirect
+ev: E010.4, E007.1
+quote: We cannot exclude that gel stiffening during culture contributes to the result ||| Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels
+tags: limitation, confound
+
+=== claim id=C15
+text: Substrate stiffness influences stem cell fate (cited background).
+s: substrate stiffness
+p: regulates
+o: stem cell fate
+origin: cited
+type: background
+ev: E005.1
+quote: Substrate stiffness is known to influence stem cell fate [1]
+tags: background
+
+=== claim id=C16
+text: Matrix elasticity directs lineage specification of mesenchymal stem cells (Engler et al.).
+s: matrix elasticity
+p: regulates
+o: lineage specification of mesenchymal stem cells
+origin: cited
+type: background
+ev: E005.2
+quote: Engler et al. showed that matrix elasticity directs lineage specification of mesenchymal stem cells [2]
+tags: background
+
+=== claim id=C17
+text: It has been proposed that stiffer matrices promote osteogenic differentiation.
+s: stiffer matrices
+p: increases
+o: osteogenic differentiation
+modality: hypothesis
+origin: background
+type: hypothesis
+ev: E005.3
+quote: It has been proposed that stiffer matrices promote osteogenic differentiation
+tags: background
+
+=== claim id=C18
+text: The findings of this study contradict the view that stiffer matrices always promote osteogenic differentiation.
+s: findings of this study
+p: consistent_with
+o: the view that stiffer matrices always promote osteogenic differentiation
+polarity: negative
+ev: E010.1
+quote: Our findings contradict the view that stiffer matrices always promote osteogenic differentiation
+tags: discussion
+
+=== claim id=C19
+text: The effect of substrate stiffness on mineralisation is mediated by integrin beta-1.
+s: integrin beta-1
+p: regulates
+o: osteoblast response to substrate stiffness
+status: unsupported
+note: searched the whole paper for integrin / beta-1 / adhesion: the paper does not mention integrins; the claim comes from background knowledge and is NOT supported by the source.
+tags: unsupported-example

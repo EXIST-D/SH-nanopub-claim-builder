@@ -1,0 +1,87 @@
+=== claim id=C1 sec=§6.1
+text: On the WMT 2014 English-to-German translation task, the big Transformer model reaches a BLEU score of 28.4.
+s: BLEU score of Transformer (big) on WMT 2014 English-to-German
+p: has_value
+o: 28.4 BLEU
+cond: WMT 2014 English-to-German translation task; Transformer (big) configuration
+ev: E104.1
+quote: establishing a new state-of-the-art BLEU score of 28.4
+tags: machine-translation, bleu
+
+=== claim id=C2
+text: On the WMT 2014 English-to-German translation task, the big Transformer outperforms the best previously reported models, including ensembles, by more than 2.0 BLEU.
+s: Transformer (big)
+p: outperforms
+o: best previously reported models (including ensembles)
+cond: WMT 2014 English-to-German translation task; margin more than 2.0 BLEU
+ev: E104.1
+quote: outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU
+tags: machine-translation
+
+=== claim id=C3
+text: On the WMT 2014 English-to-French translation task, the big Transformer model reaches a BLEU score of 41.0.
+s: BLEU score of Transformer (big) on WMT 2014 English-to-French
+p: has_value
+o: 41.0 BLEU
+cond: WMT 2014 English-to-French translation task; Transformer (big)
+ev: E105.1
+quote: our big model achieves a BLEU score of 41.0
+tags: machine-translation, bleu
+
+=== claim id=C4
+text: Single-head attention is 0.9 BLEU worse than the best setting of the number of heads.
+s: best attention setting
+p: outperforms
+o: single-head attention
+cond: by 0.9 BLEU; Transformer base model variations (Table 3 rows (A))
+ev: E113.2
+quote: single-head attention is 0.9 BLEU worse than the best setting
+tags: ablation, attention
+
+=== claim id=C5
+text: Reducing the attention key size dk hurts model quality.
+s: reducing attention key size dk
+p: decreases
+o: model quality
+cond: Table 3 rows (B)
+ev: E114.1
+quote: reducing the attention key size dk hurts model quality
+tags: ablation
+
+=== claim id=C6
+text: On both WMT 2014 English-to-German and English-to-French translation tasks the Transformer achieves a new state of the art and the model is cheaper to train than previous models.
+s: Transformer
+p: outperforms
+o: previous state of the art
+ev: E123.2
+tags: machine-translation
+
+=== claim id=C7
+text: RNN sequence-to-sequence models have not been able to attain state-of-the-art results in small-data regimes.
+s: RNN sequence-to-sequence models
+p: other
+o: state-of-the-art results in small-data regimes
+polarity: negative
+cond: small-data regimes
+ev: E115.3
+quote: RNN sequence-to-sequence models have not been able to attain state-of-the-art results in small-data regimes
+origin: cited
+tags: parsing
+
+=== claim id=C8
+text: The Transformer outperforms the Berkeley Parser even when trained only on the WSJ training set of 40K sentences.
+s: Transformer
+p: outperforms
+o: Berkeley Parser
+cond: English constituency parsing; trained only on the WSJ training set of 40K sentences
+ev: E121.1
+quote: the Transformer outperforms the Berkeley- Parser [29] even when training only on the WSJ training set of 40K sentences
+tags: parsing
+
+=== claim id=C9
+text: The Transformer causes lower perplexity on every language pair.
+s: Transformer
+p: reduces
+o: perplexity
+ev: E104.1
+tags: translation

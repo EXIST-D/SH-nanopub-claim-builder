@@ -1,0 +1,78 @@
+=== claim id=C1
+text: An ensemble of residual networks achieves 3.57% error on the ImageNet test set.
+s: ensemble of residual networks
+p: has_value
+o: 3.57% error
+cond: ImageNet test set
+ev: E007.6
+quote: An ensemble of these residual nets achieves 3.57% error on the ImageNet test set
+tags: imagenet
+
+=== claim id=C2
+text: The ensemble of residual networks won 1st place on the ILSVRC 2015 classification task.
+s: ensemble of residual networks
+p: outperforms
+o: other ILSVRC 2015 classification entries
+ev: E007.6, E007.7
+quote: This result won the 1st place on the ILSVRC 2015 classification task
+tags: ilsvrc
+
+=== claim id=C3
+text: The 34-layer plain net has higher validation error than the 18-layer plain net.
+s: 18-layer plain net
+p: outperforms
+o: 34-layer plain net
+cond: ImageNet, validation error (Table 2)
+ev: E053.1
+quote: the deeper 34-layer plain net has higher validation error than the shallower 18-layer plain net
+tags: degradation
+
+=== claim id=C4
+text: The 34-layer ResNet is better than the 18-layer ResNet by 2.8%.
+s: 34-layer ResNet
+p: outperforms
+o: 18-layer ResNet
+cond: ImageNet (Table 2); margin 2.8%
+ev: E067.1
+quote: the 34-layer ResNet is better than the 18-layer ResNet (by 2.8%)
+tags: depth
+
+=== claim id=C5
+text: Projection shortcuts are not essential for addressing the degradation problem.
+s: projection shortcuts
+p: requires
+o: addressing the degradation problem
+polarity: negative
+cond: small differences among options A/B/C in Table 3
+ev: E080.4
+quote: the small differences among A/B/C indicate that projection shortcuts are not essential for addressing the degradation problem
+tags: shortcuts
+
+=== claim id=C6
+text: Using the residual formulation yields a 28% relative improvement on the COCO object detection dataset.
+s: very deep representations
+p: increases
+o: COCO object detection performance
+value: 28
+unit: % relative
+cond: COCO object detection dataset
+ev: E008.2
+quote: Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset
+tags: coco
+
+=== claim id=C7
+text: Deep residual nets are foundations of the authors' submissions to the ILSVRC and COCO 2015 competitions.
+s: deep residual nets
+p: part_of
+o: submissions to ILSVRC and COCO 2015 competitions
+ev: E008.3
+tags: competitions
+
+=== claim id=C8
+text: The 34-layer ResNet exhibits considerably lower training error than the plain net and generalizes to the validation data.
+s: 34-layer ResNet
+p: decreases
+o: training error
+ev: E067.2
+quote: the 34-layer ResNet exhibits considerably lower training error and is generalizable to the validation data
+tags: degradation

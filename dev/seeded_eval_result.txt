@@ -1,0 +1,19 @@
+claims checked: 31 | unmodified claims: error-level false alarms 0 (0%), any warning 10 (32%)
+injected defect                                             cases    caught caught(err)
+fabricated quote (2 words changed)                             25      100%        100%
+paraphrase passed off as quote                                 25      100%        100%
+anchor points to another section (with quote)                  31      100%        100%
+anchor points to another section (no quote)                    31      100%         94%
+number changed in the claim text                               22      100%        100%
+evidence anchor deleted                                        31      100%        100%
+unneeded evidence added (not minimal)                          31      100%          0%
+subject replaced by an entity from elsewhere                   29       79%         72%
+object replaced by an entity from elsewhere                    29       83%         69%
+polarity flipped to negative                                   31       97%          0%
+conditions / scope removed                                     21       19%          0%
+universal quantifier added ('in all cases')                    31      100%          0%
+relation changed to 'causes' (association/causation)           30       77%          0%
+relation changed to 'treats'                                   31       77%          0%
+compound claim (two claims joined)                             31      100%        100%
+text replaced by an unrelated sentence                         31       90%         42%
+subject and object swapped (direction error)                   17       71%          0%

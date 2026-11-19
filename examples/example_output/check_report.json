@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "claims": 19,
+  "accepted": 19,
+  "reported": 18,
+  "with_errors": 0,
+  "with_warnings": 2,
+  "non_reported": {
+   "unsupported": 1
+  },
+  "quotes_verified": 19,
+  "quotes_failed": 0,
+  "confidence": {
+   "high": 13,
+   "medium": 5
+  },
+  "origin": {
+   "this_paper": 16,
+   "cited": 2
+  },
+  "relations": {
+   "outperforms": 1,
+   "differs_from": 2,
+   "associated_with": 1,
+   "has_value": 2,
+   "regulates": 4,
+   "decreases": 1,
+   "uses": 2,
+   "derived_from": 1,
+   "other": 1,
+   "causes": 1,
+   "increases": 1,
+   "consistent_with": 1
+  },
+  "issue_kinds": {
+   "identifier_origin": 1,
+   "relation_free_text": 1
+  },
+  "source_missing": [],
+  "uncovered_candidates": 1
+ },
+ "per_source": [
+  {
+   "claims": 19,
+   "accepted": 19,
+   "reported": 18,
+   "with_errors": 0,
+   "with_warnings": 2,
+   "non_reported": {
+    "unsupported": 1
+   },
+   "quotes_verified": 19,
+   "quotes_failed": 0,
+   "confidence": {
+    "high": 13,
+    "medium": 5
+   },
+   "origin": {
+    "this_paper": 16,
+    "cited": 2
+   },
+   "relations": {
+    "outperforms": 1,
+    "differs_from": 2,
+    "associated_with": 1,
+    "has_value": 2,
+    "regulates": 4,
+    "decreases": 1,
+    "uses": 2,
+    "derived_from": 1,
+    "other": 1,
+    "causes": 1,
+    "increases": 1,
+    "consistent_with": 1
+   },
+   "issue_kinds": {
+    "identifier_origin": 1,
+    "relation_free_text": 1
+   },
+   "source_missing": [],
+   "uncovered_candidates": 1
+  }
+ ],
+ "rejected_claims": [],
+ "uncovered_candidates": [
+  "E004.3 Nuclear YAP localisation was lower on 10 kPa gels, which suggests that YAP signalling mediates part of the stiffness response."
+ ],
+ "trig_validation": {
+  "ok": true,
+  "nanopubs": 18,
+  "errors": [],
+  "unsupported": null
+ },
+ "roundtrip": {
+  "claims": 19,
+  "locators_reproduce_quotes": true,
+  "failures": []
+ }
+}

@@ -1,0 +1,378 @@
+[
+ {
+  "source": "S1",
+  "file": "mini_paper.md",
+  "sections": [
+   {
+    "id": "§front",
+    "title": "(front matter)",
+    "level": 0,
+    "number": null,
+    "units": [
+     "E001",
+     "E002",
+     "E003"
+    ],
+    "excluded": false,
+    "optional": true,
+    "parent": null,
+    "pages": [],
+    "n_units": 3,
+    "words": 26,
+    "first": "E001",
+    "last": "E003",
+    "words_total": 26,
+    "path": "(front matter)"
+   },
+   {
+    "id": "§abs",
+    "title": "Abstract",
+    "level": 1,
+    "number": null,
+    "units": [
+     "E004"
+    ],
+    "excluded": false,
+    "parent": null,
+    "optional": true,
+    "pages": [],
+    "n_units": 1,
+    "words": 82,
+    "first": "E004",
+    "last": "E004",
+    "words_total": 82,
+    "path": "Abstract"
+   },
+   {
+    "id": "§1",
+    "title": "Introduction",
+    "level": 1,
+    "number": "1",
+    "units": [
+     "E005"
+    ],
+    "excluded": false,
+    "parent": null,
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 60,
+    "first": "E005",
+    "last": "E005",
+    "words_total": 60,
+    "path": "Introduction"
+   },
+   {
+    "id": "§2",
+    "title": "Methods",
+    "level": 1,
+    "number": "2",
+    "units": [
+     "E006"
+    ],
+    "excluded": false,
+    "parent": null,
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 77,
+    "first": "E006",
+    "last": "E006",
+    "words_total": 77,
+    "path": "Methods"
+   },
+   {
+    "id": "§3",
+    "title": "Results",
+    "level": 1,
+    "number": "3",
+    "units": [],
+    "excluded": false,
+    "parent": null,
+    "optional": false,
+    "pages": [],
+    "n_units": 0,
+    "words": 0,
+    "first": null,
+    "last": null,
+    "words_total": 124,
+    "path": "Results"
+   },
+   {
+    "id": "§3.1",
+    "title": "Mineralisation",
+    "level": 2,
+    "number": "3.1",
+    "units": [
+     "E007"
+    ],
+    "excluded": false,
+    "parent": "§3",
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 49,
+    "first": "E007",
+    "last": "E007",
+    "words_total": 49,
+    "path": "Results > Mineralisation"
+   },
+   {
+    "id": "§3.2",
+    "title": "YAP localisation",
+    "level": 2,
+    "number": "3.2",
+    "units": [
+     "E008"
+    ],
+    "excluded": false,
+    "parent": "§3",
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 57,
+    "first": "E008",
+    "last": "E008",
+    "words_total": 57,
+    "path": "Results > YAP localisation"
+   },
+   {
+    "id": "§3.3",
+    "title": "Human cell line",
+    "level": 2,
+    "number": "3.3",
+    "units": [
+     "E009"
+    ],
+    "excluded": false,
+    "parent": "§3",
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 18,
+    "first": "E009",
+    "last": "E009",
+    "words_total": 18,
+    "path": "Results > Human cell line"
+   },
+   {
+    "id": "§4",
+    "title": "Discussion",
+    "level": 1,
+    "number": "4",
+    "units": [
+     "E010"
+    ],
+    "excluded": false,
+    "parent": null,
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 54,
+    "first": "E010",
+    "last": "E010",
+    "words_total": 54,
+    "path": "Discussion"
+   },
+   {
+    "id": "§s9",
+    "title": "References",
+    "level": 1,
+    "number": null,
+    "units": [
+     "E011"
+    ],
+    "excluded": true,
+    "parent": null,
+    "optional": false,
+    "pages": [],
+    "n_units": 1,
+    "words": 54,
+    "first": "E011",
+    "last": "E011",
+    "words_total": 54,
+    "path": "References"
+   }
+  ],
+  "units": [
+   {
+    "id": "E001",
+    "type": "title",
+    "section": "§front",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t0",
+    "excluded": false,
+    "text": "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper",
+    "sentences": [
+     "Soft-Substrate Culture Raises Osteoblast Mineralisation: A Fictional Example Paper"
+    ]
+   },
+   {
+    "id": "E002",
+    "type": "paragraph",
+    "section": "§front",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t1",
+    "excluded": false,
+    "text": "Mara Lindqvist, Tomas Okafor, Yuki Hartmann",
+    "sentences": [
+     "Mara Lindqvist, Tomas Okafor, Yuki Hartmann"
+    ]
+   },
+   {
+    "id": "E003",
+    "type": "paragraph",
+    "section": "§front",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t2",
+    "excluded": false,
+    "text": "Journal of Imaginary Biomaterials, 2024. DOI: 10.9999/jib.2024.0042",
+    "sentences": [
+     "Journal of Imaginary Biomaterials, 2024. DOI: 10.9999/jib.2024.0042"
+    ]
+   },
+   {
+    "id": "E004",
+    "type": "paragraph",
+    "section": "§abs",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t4",
+    "excluded": false,
+    "text": "We cultured primary rat osteoblasts on polyacrylamide gels of three stiffnesses (1, 10 and 40 kPa) for 21 days. Mineralised nodule area was 2.3-fold higher on 10 kPa gels than on 40 kPa gels (n = 6 per condition). Nuclear YAP localisation was lower on 10 kPa gels, which suggests that YAP signalling mediates part of the stiffness response. The effect was not observed in a human cell line. These results are limited to in vitro conditions and a single donor pool.",
+    "sentences": [
+     "We cultured primary rat osteoblasts on polyacrylamide gels of three stiffnesses (1, 10 and 40 kPa) for 21 days.",
+     "Mineralised nodule area was 2.3-fold higher on 10 kPa gels than on 40 kPa gels (n = 6 per condition).",
+     "Nuclear YAP localisation was lower on 10 kPa gels, which suggests that YAP signalling mediates part of the stiffness response.",
+     "The effect was not observed in a human cell line.",
+     "These results are limited to in vitro conditions and a single donor pool."
+    ]
+   },
+   {
+    "id": "E005",
+    "type": "paragraph",
+    "section": "§1",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t6",
+    "excluded": false,
+    "text": "Substrate stiffness is known to influence stem cell fate [1]. Engler et al. showed that matrix elasticity directs lineage specification of mesenchymal stem cells [2]. It has been proposed that stiffer matrices promote osteogenic differentiation, but direct tests on primary osteoblasts are scarce. Here we test whether substrate stiffness changes mineralisation in primary rat osteoblasts and whether YAP is involved.",
+    "sentences": [
+     "Substrate stiffness is known to influence stem cell fate [1].",
+     "Engler et al. showed that matrix elasticity directs lineage specification of mesenchymal stem cells [2].",
+     "It has been proposed that stiffer matrices promote osteogenic differentiation, but direct tests on primary osteoblasts are scarce.",
+     "Here we test whether substrate stiffness changes mineralisation in primary rat osteoblasts and whether YAP is involved."
+    ]
+   },
+   {
+    "id": "E006",
+    "type": "paragraph",
+    "section": "§2",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t8",
+    "excluded": false,
+    "text": "Primary osteoblasts were isolated from the calvaria of neonatal Sprague-Dawley rats and pooled from one litter. Cells were seeded at 5,000 cells per cm2 on polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa and cultured for 21 days in osteogenic medium. Mineralised nodules were stained with Alizarin Red S and the stained area was quantified in six wells per condition. YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel.",
+    "sentences": [
+     "Primary osteoblasts were isolated from the calvaria of neonatal Sprague-Dawley rats and pooled from one litter.",
+     "Cells were seeded at 5,000 cells per cm2 on polyacrylamide gels with Young's modulus of 1, 10 or 40 kPa and cultured for 21 days in osteogenic medium.",
+     "Mineralised nodules were stained with Alizarin Red S and the stained area was quantified in six wells per condition.",
+     "YAP localisation was scored by immunofluorescence in at least 200 nuclei per gel."
+    ]
+   },
+   {
+    "id": "E007",
+    "type": "paragraph",
+    "section": "§3.1",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t11",
+    "excluded": false,
+    "text": "Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels (p = 0.004, n = 6). Cells on 1 kPa gels formed few nodules and showed no significant difference from 40 kPa gels. Nodule area did not correlate with cell density at day 21.",
+    "sentences": [
+     "Mineralised nodule area on 10 kPa gels was 2.3-fold higher than on 40 kPa gels (p = 0.004, n = 6).",
+     "Cells on 1 kPa gels formed few nodules and showed no significant difference from 40 kPa gels.",
+     "Nodule area did not correlate with cell density at day 21."
+    ]
+   },
+   {
+    "id": "E008",
+    "type": "paragraph",
+    "section": "§3.2",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t13",
+    "excluded": false,
+    "text": "The fraction of nuclei with nuclear YAP was 31% on 10 kPa gels and 58% on 40 kPa gels. Treatment with the YAP inhibitor verteporfin reduced nodule area on 40 kPa gels by 22%, but it did not change nodule area on 10 kPa gels. These data suggest that YAP signalling mediates part of the stiffness response.",
+    "sentences": [
+     "The fraction of nuclei with nuclear YAP was 31% on 10 kPa gels and 58% on 40 kPa gels.",
+     "Treatment with the YAP inhibitor verteporfin reduced nodule area on 40 kPa gels by 22%, but it did not change nodule area on 10 kPa gels.",
+     "These data suggest that YAP signalling mediates part of the stiffness response."
+    ]
+   },
+   {
+    "id": "E009",
+    "type": "paragraph",
+    "section": "§3.3",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t15",
+    "excluded": false,
+    "text": "In the human osteosarcoma line Saos-2, nodule area did not differ between 10 kPa and 40 kPa gels.",
+    "sentences": [
+     "In the human osteosarcoma line Saos-2, nodule area did not differ between 10 kPa and 40 kPa gels."
+    ]
+   },
+   {
+    "id": "E010",
+    "type": "paragraph",
+    "section": "§4",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t17",
+    "excluded": false,
+    "text": "Our findings contradict the view that stiffer matrices always promote osteogenic differentiation [1]. All experiments used cells from a single litter, so donor variability was not assessed. Gel stiffness was verified only at day 0. We cannot exclude that gel stiffening during culture contributes to the result. Future work should test in vivo scaffolds.",
+    "sentences": [
+     "Our findings contradict the view that stiffer matrices always promote osteogenic differentiation [1].",
+     "All experiments used cells from a single litter, so donor variability was not assessed.",
+     "Gel stiffness was verified only at day 0.",
+     "We cannot exclude that gel stiffening during culture contributes to the result.",
+     "Future work should test in vivo scaffolds."
+    ]
+   },
+   {
+    "id": "E011",
+    "type": "paragraph",
+    "section": "§s9",
+    "pages": [],
+    "page": null,
+    "bbox": null,
+    "block": "t19",
+    "excluded": true,
+    "text": "[1] Discher DE, Mooney DJ, Zandstra PW. Growth factors, matrices, and forces combine and control stem cells. Science. 2009;324:1673-1677. doi:10.1126/science.1171643 [2] Engler AJ, Sen S, Sweeney HL, Discher DE. Matrix elasticity directs stem cell lineage specification. Cell. 2006;126:677-689. doi:10.1016/j.cell.2006.06.044",
+    "sentences": [
+     "[1] Discher DE, Mooney DJ, Zandstra PW.",
+     "Growth factors, matrices, and forces combine and control stem cells.",
+     "Science.",
+     "2009;324:1673-1677. doi:10.1126/science.1171643 [2] Engler AJ, Sen S, Sweeney HL, Discher DE.",
+     "Matrix elasticity directs stem cell lineage specification.",
+     "Cell.",
+     "2006;126:677-689. doi:10.1016/j.cell.2006.06.044"
+    ]
+   }
+  ]
+ }
+]
