@@ -102,3 +102,7 @@ origin: cited                 # 断言属于被引文献时使用
 
 ## 版本与维护
 `npb.py` 1.0.0 · schema `np-claim-builder/1` · 问题与改进请在 GitHub 仓库提 issue。
+
+
+## 示例文件的后缀
+平台只接受部分文件类型作为 Skill 资源，所以示例里这些文件的名字后面加了 `.txt`：`examples/example_output/nanopubs.jsonl`、`examples/example_output/nanopubs.trig`。去掉 `.txt` 就是脚本实际读写的文件名；脚本本身的输出文件名没有变。
